@@ -4,7 +4,7 @@
 - 发送的图片、视频等本地下载时，位置在C:\Users\自己的用户名\AppData\Roaming\WeChat文件夹下
 - 属性表备份可参考Server所需文件夹中的属性表备份，也可以根据[恋恋风辰官方博客](https://gitbookcpp.llfc.club/sections/cpp/project/day03.html)自行配置
 
-# 配置：
+## 配置：
 - Mysql: 9.3.0
 - Qt: 6.5.3
 - Boost: 1.81.0
