@@ -1,0 +1,420 @@
+*{
+    font-family: "Microsoft YaHei";
+}
+
+#tip_label[state='normal'] {
+    color:green;
+}
+
+#tip_label[state='err']{
+    color:red;
+}
+
+#pass_visible[state="visible"] {
+    border-image:url(:/images/visible.png);
+}
+
+#pass_visible[state="visible_hover"]{
+    border-image:url(:/images/visible_hover.png);
+}
+
+#pass_visible[state="unvisible"]{
+    border-image:url(:/images/unvisible.png);
+}
+
+#pass_visible[state="unvisible_hover"]{
+    border-image:url(:/images/unvisible_hover.png);
+}
+
+#confirm_visible[state="visible"] {
+    border-image:url(:/images/visible.png);
+}
+
+#confirm_visible[state="visible_hover"]{
+    border-image:url(:/images/visible_hover.png);
+}
+
+#confirm_visible[state="unvisible"]{
+    border-image:url(:/images/unvisible.png);
+}
+
+#confirm_visible[state="unvisible_hover"]{
+    border-image:url(:/images/unvisible_hover.png);
+}
+
+#forget_label[state="visible_hover"]{
+    color:rgb(121, 187, 255);
+}
+
+#forget_label[state="unvisible_hover"]{
+    color: rgb(121, 187, 255);
+}
+
+#side_bar{
+    background-color:rgb(46,46,46);
+}
+
+#side_chat_lb{
+    background-color: rgba(0,0,0,0);
+}
+
+#side_chat_lb[state="normal"]{
+    border-image: url(:/images/chat_icon.png);
+}
+
+#side_chat_lb[state="hover"]{
+    border-image: url(:/images/chat_icon_hover.png);
+}
+
+#side_chat_lb[state="press"]{
+    border-image: url(:/images/chat_icon_press.png);
+}
+
+#side_chat_lb[state="select"]{
+    border-image: url(:/images/chat_icon_press.png);
+}
+
+#side_chat_lb[state="select_hover"]{
+    border-image: url(:/images/chat_icon_press.png);
+}
+
+#side_chat_lb[state="select_press"]{
+    border-image: url(:/images/chat_icon_select_press.png);
+}
+
+#side_contact_lb[state='normal']{
+    border-image: url(:/images/contact_list.png);
+}
+
+#side_contact_lb[state='hover']{
+    border-image: url(:/images/contact_list_hover.png);
+}
+
+#side_contact_lb[state='press']{
+    border-image: url(:/images/contact_list_press.png);
+}
+
+#side_contact_lb[state='select']{
+    border-image: url(:/images/contact_list_press.png);
+}
+
+#side_contact_lb[state='select_hover']{
+    border-image: url(:/images/contact_list_press.png);
+}
+
+#side_contact_lb[state='select_pressed']{
+    border-image: url(:/images/contact_list_press.png);
+}
+
+#side_setting_lb[state='normal']{
+    border-image: url(:/images/settings.png);
+}
+
+#side_setting_lb[state='hover']{
+    border-image: url(:/images/settings_hover.png);
+}
+
+#side_setting_lb[state='press']{
+    border-image: url(:/images/settings_select_press.png);
+}
+
+#side_setting_lb[state='select']{
+    border-image: url(:/images/settings.png);
+}
+
+#side_setting_lb[state='select_hover']{
+    border-image: url(:/images/settings_select_hover.png);
+}
+
+#side_setting_lb[state='select_pressed']{
+    border-image: url(:/images/settings_select_press.png);
+}
+
+#chat_lb[state='normal']{
+    border-image: url(:/images/msg_chat_normal.png);
+}
+
+#chat_lb[state='hover']{
+    border-image: url(:/images/msg_chat_hover.png);
+}
+
+#chat_lb[state='press']{
+    border-image: url(:/images/msg_chat_press.png);
+}
+
+#chat_lb[state='select']{
+    border-image: url(:/images/msg_chat_normal.png);
+}
+
+#chat_lb[state='select_hover']{
+    border-image: url(:/images/msg_chat_hover.png);
+}
+
+#chat_lb[state='select_pressed']{
+    border-image: url(:/images/msg_chat_press.png);
+}
+
+#voice_lb[state='normal']{
+    border-image: url(:/images/voice_chat_normal.png);
+}
+
+#voice_lb[state='hover']{
+    border-image: url(:/images/voice_chat_hover.png);
+}
+
+#voice_lb[state='press']{
+    border-image: url(:/images/voice_chat_press.png);
+}
+
+#voice_lb[state='select']{
+    border-image: url(:/images/voice_chat_normal.png);
+}
+
+#voice_lb[state='select_hover']{
+    border-image: url(:/images/voice_chat_hover.png);
+}
+
+#voice_lb[state='select_pressed']{
+    border-image: url(:/images/voice_chat_press.png);
+}
+
+#video_lb[state='normal']{
+    border-image: url(:/images/video_chat_normal.png);
+}
+
+#video_lb[state='hover']{
+    border-image: url(:/images/video_chat_hover.png);
+}
+
+#video_lb[state='press']{
+    border-image: url(:/images/video_chat_press.png);
+}
+
+#video_lb[state='select']{
+    border-image: url(:/images/video_chat_normal.png);
+}
+
+#video_lb[state='select_hover']{
+    border-image: url(:/images/video_chat_hover.png);
+}
+
+#video_lb[state='select_pressed']{
+    border-image: url(:/images/video_chat_press.png);
+}
+
+#add_btn[state="normal"]{
+    border-image: url(:/images/add_friend_normal.png);
+}
+
+#add_btn[state="hover"]{
+    border-image: url(:/images/add_friend_hover.png);
+}
+
+#add_btn[state="press"]{
+    border-image: url(:/images/add_friend.png);
+}
+
+#tipsLb[state="normal"]{
+    background-color: #DCDCDC;
+    border-radius: 5px;
+}
+
+#tipsLb[state="normal_hover"]{
+    background-color: #DCDCDC;
+    border-radius: 5px;
+}
+#tipsLb[state="normal_press"]{
+    background-color: #DCDCDC;
+    color: #32CD32;
+    border-radius: 5px;
+}
+#tipsLb[state="select"]{
+    background-color: #DCDCDC;
+    color: 	#32CD32;
+    border-radius: 5px;
+}
+#tipsLb[state="select_hover"]{
+    background-color: #DCDCDC;
+    color: 	#32CD32;
+    border-radius: 5px;
+}
+#tipsLb[state="select_press"]{
+    background-color: #DCDCDC;
+    color: 	#32CD32;
+    border-radius: 5px;
+}
+
+#FriendLabel{
+    border-radius: 5px;
+}
+
+#ApplyFriendDialog{
+    border-radius: 10px;
+    background-color: #DCDCDC;
+}
+
+QWidget#title_wid{
+    border-bottom: 1px solid #000000;
+}
+
+#emo_lb[state="normal"] {
+    border-image: url(:/images/smile.png);
+}
+
+#emo_lb[state="hover"]{
+    border-image: url(:/images/smile_hover.png);
+}
+
+#emo_lb[state="press"]{
+    border-image: url(:/images/smile_press.png);
+}
+
+#file_lb[state="normal"] {
+    border-image: url(:/images/filedir.png);
+}
+
+#file_lb[state="hover"]{
+    border-image: url(:/images/filedir_hover.png);
+}
+
+#file_lb[state="press"]{
+    border-image: url(:/images/filedir_press.png);
+}
+
+#search_edit{
+    padding: 5px;
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+#data_edit{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#send_btn[state="unvalid"]{
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    color: #708090;
+}
+
+#send_btn[state="valid"]{
+    background-color: #43CD80;
+    border-radius: 10px;
+    color: #F5F5F5;
+}
+
+#data_list{
+    border: 0px;
+    background-color: transparent;
+}
+
+/* 让整个 ChatView 透明 */
+#data_list,
+#data_list > QScrollArea,
+#data_list > QScrollArea > QWidget,
+#data_list > QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+    border: none;
+}
+
+#chat_data_wid {
+    background-color: #ffffff;
+}
+
+#send_data_wid{
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#data_edit{
+    font-family: "Microsoft YaHei";
+    border: none;
+    padding: 5px;
+}
+
+#chat_user_list, #con_user_list, #search_list{
+    background-color: #F5F5F5;
+}
+
+#chat_user_list::item:selected {
+    background-color: #07C160;
+    border: none;
+    outline: none;
+}
+
+#chat_user_list::item:hover {
+    background-color: rgb(206, 207,208);
+    border: none;
+    outline: none;
+}
+#chat_user_list::focus {
+    border: none;
+    outline: none;
+}
+
+#search_edit {
+    border: 2px solid #f1f1f1;
+}
+/* 搜索框列表*/
+#con_user_list {
+    background-color: rgb(247,247,248);
+    border: none;
+}
+#con_user_list::item:selected {
+    background-color: #d3d7d4;
+    border: none;
+    outline: none;
+}
+#con_user_list::item:hover {
+    background-color: rgb(206,207,208);
+    border: none;
+    outline: none;
+}
+#con_user_list::focus {
+    border: none;
+    outline: none;
+}
+#invalid_item {
+    background-color: #eaeaea;
+    border: none;
+}
+#add_tip {
+    border-image: url(:/images/addtip.png);
+}
+#right_tip{
+ border-image: url(:/images/right_tip.png);
+}
+#message_tip{
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 12pt;
+}
+
+/* 垂直滚动条整体 */
+QScrollBar:vertical {
+    background: #F0F0F0;          /* 背景色 */
+    width: 8px;                  /* 滚动条宽度 */
+    margin: 0px 0px 0px 0px;      /* 外边距 */
+    border-radius: 4px;
+}
+
+/* 滚动条滑块（拖动的部分） */
+QScrollBar::handle:vertical {
+    background: #C0C0C0;          /* 滑块颜色 */
+    min-height: 30px;             /* 最小高度 */
+}
+
+/* 滑块悬停效果（可选） */
+QScrollBar::handle:vertical:hover {
+    background: #A0A0A0;
+}
+
+/* 滑块按下效果 */
+QScrollBar::handle:vertical:pressed {
+    background: #808080;
+}
+
+#side_head_lb{
+    border-radius: 10px;
+}

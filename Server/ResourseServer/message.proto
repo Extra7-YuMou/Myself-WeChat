@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package message;
+
+service ResourceService{
+	rpc NotifyChatImgMsg(GetChatImgMsgReq) returns (GetChatImgMsgRsp) {}
+	rpc NotifyChatVideoMsg(GetChatVideoMsgReq) returns (GetChatVideoMsgRsp) {}
+}
+
+message GetChatImgMsgReq{
+	int64 msg_id = 1;
+	int32 uid = 2;
+	int32 recv_uid = 3;
+	string name = 4;
+	int64 thread_id = 5;
+	string md5 = 6;
+	int64 total_size = 7;
+}
+
+message GetChatImgMsgRsp {
+	int32 error = 1;
+}
+
+message GetChatVideoMsgReq{
+	int64 msg_id = 1;
+	int32 uid = 2;
+	int32 recv_uid = 3;
+	string name = 4;
+	string cover_name = 5;
+	int64 thread_id = 6;
+	int32 duration = 7;
+}
+
+message GetChatVideoMsgRsp {
+	int32 error = 1;
+}

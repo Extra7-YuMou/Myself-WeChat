@@ -1,0 +1,60 @@
+#pragma once
+#include <fstream>
+#include <string>
+#include <map>
+#include "Singleton.h"
+#include <vector>
+
+struct SectionInfo {
+	SectionInfo(){}
+	SectionInfo(const SectionInfo& sec) {
+		_section_data = sec._section_data;
+	}
+
+	SectionInfo& operator = (const SectionInfo & sec){
+		if (&sec == this) {
+			return *this;
+		}
+
+		_section_data = sec._section_data;
+	}
+
+	std::string operator[](const std::string& key) {
+		if (_section_data.find(key) == _section_data.end()) {
+			return "";
+		}
+
+		return _section_data[key];
+	}
+
+	~SectionInfo() {
+		_section_data.clear();
+	}
+
+	std::map<std::string, std::string> _section_data;
+};
+
+// 读取配置文件类
+class ConfigMgr : public Singleton<ConfigMgr> {
+	friend class Singleton<ConfigMgr>;
+public:
+	~ConfigMgr();
+	SectionInfo operator[](const std::string& key) {
+		if (_config_map.find(key) == _config_map.end()) {
+			return SectionInfo();
+		}
+		return _config_map[key];
+	}
+
+	std::string getSelfServerName();
+
+	void printAll() const;
+private:
+	ConfigMgr();
+	ConfigMgr(const ConfigMgr&) = delete;
+	ConfigMgr& operator=(const ConfigMgr&) = delete;
+
+	std::map<std::string, SectionInfo> _config_map;
+	std::string first;
+};
+

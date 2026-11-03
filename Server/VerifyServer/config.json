@@ -1,0 +1,16 @@
+{
+    "email": {
+        "user": "wechat204621@163.com",
+        "pass": "JRncbsfDWijzhcFU"
+    },
+    "redis": {
+        "host": "192.168.174.130",
+        "port": 6379,
+        "passwd": "123456"
+    },
+    "mysql": {
+        "host": "192.168.174.130",
+        "port": 3308,
+        "passwd": "123456"
+    }
+}
